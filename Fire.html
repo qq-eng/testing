@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>消防安全</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>上报人</th>
+			<td>
+				<form>
+					<input type="text">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<th>上报日期</th>
+			<td><select>
+					<option selected="selected">--请选择年--</option>
+					<option>2020</option>
+					<option>2021</option>
+					<option>2022</option>
+					<option>2023</option>
+			</select> <select>
+					<option selected="selected">--请选择月--</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+			</select> <select>
+					<option selected="selected">--请选择日--</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+			</select></td>
+		</tr>
+		<tr>
+			<th>手机号码</th>
+			<!-- 限制只能输入数字 -->
+			<td><input type="text"
+				oninput="value=value.replace(/[^\d]/g,'')"></td>
+		</tr>
+		<tr>
+			<th>安全隐患地点</th>
+			<td><input type="text"></td>
+		</tr>
+		<tr>
+			<th>具体安全隐患情况</th>
+			<td><textarea>请输入……</textarea></td>
+		</tr>
+	</table>
+	<script>
+		var d = new Date();
+		document.getElementById("demo").innerHTML = d.getFullYear();
+	</script>
+</body>
+</html>
